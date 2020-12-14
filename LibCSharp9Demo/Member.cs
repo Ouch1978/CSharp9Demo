@@ -8,8 +8,8 @@ namespace LibCSharp9Demo
 {
     public record Member
     {
-        public string LastName { get; }
-        public string FirstName { get; }
+        public string LastName;
+        public string FirstName;
 
         public Member( string first , string last ) => (FirstName, LastName) = (first, last);
     }

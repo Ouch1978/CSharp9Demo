@@ -8,7 +8,7 @@ namespace LibCSharp9Demo
 {
     public record VipMember : Member
     {
-        public int VipLevel { get; }
+        public int VipLevel { get; init; }
 
         public VipMember( string first , string last , int vipLevel )
             : base( first , last ) => VipLevel = vipLevel;
