@@ -11,6 +11,9 @@ namespace LibCSharp9Demo
         public string LastName;
         public string FirstName;
 
-        public Member( string first , string last ) => (FirstName, LastName) = (first, last);
+        public Member( string firstName , string lastName ) => (FirstName, LastName) = (firstName, lastName);
+
+        public void Deconstruct( out string firstName , out string lastName )
+            => (firstName, lastName) = (FirstName, LastName);
     }
 }

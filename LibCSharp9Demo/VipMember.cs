@@ -10,7 +10,7 @@ namespace LibCSharp9Demo
     {
         public int VipLevel { get; init; }
 
-        public VipMember( string first , string last , int vipLevel )
-            : base( first , last ) => VipLevel = vipLevel;
+        public VipMember( string firstName , string lastName , int vipLevel )
+            : base( firstName , lastName ) => VipLevel = vipLevel;
     }
 }
