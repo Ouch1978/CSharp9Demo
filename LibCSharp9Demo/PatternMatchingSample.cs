@@ -26,9 +26,10 @@ namespace LibCSharp9Demo
                 Taxi { IsNightTime: true } or Uber { IsNightTime: true } => 70 + 20,
                 Uber or Taxi => 70,
 
-                Bus b when( ( double ) b.Riders / ( double ) b.Capacity ) < 0.50 => 5 + 2,
+                Bus b when( b.Segments > 1 ) => 15 * b.Segments,
 
-                Mrt => 1,
+                Mrt { IsTransfer: true } => 20 - 8,
+                Mrt => 20,
 
                 { } => throw new ArgumentException( message: "Not a known vehicle type" , paramName: nameof( vehicle ) ),
 
@@ -47,12 +48,13 @@ namespace LibCSharp9Demo
 
     public class Mrt
     {
+        public bool IsTransfer { get; set; }
     }
 
     public class Bus
     {
-        public double Riders { get; set; }
-        public double Capacity { get; set; }
+        public bool IsTransfer { get; set; }
+        public int Segments { get; set; }
     }
 
 }

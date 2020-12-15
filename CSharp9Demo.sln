@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCSharp9Demo", "WpfCSharp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCSharp9Demo", "ConsoleCSharp9Demo\ConsoleCSharp9Demo.csproj", "{831E9BE1-2377-4D8F-A38F-8231089EDB47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCSharp9Demo", "WebCSharp9Demo\WebCSharp9Demo.csproj", "{20193638-A4D5-4765-B573-2271F411CF4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCSharp9Demo", "WebCSharp9Demo\WebCSharp9Demo.csproj", "{20193638-A4D5-4765-B573-2271F411CF4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibCSharp9Demo", "LibCSharp9Demo\LibCSharp9Demo.csproj", "{B77B11D2-E177-4BB5-AE12-5AA7ABC20F37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibCSharp9Demo", "LibCSharp9Demo\LibCSharp9Demo.csproj", "{B77B11D2-E177-4BB5-AE12-5AA7ABC20F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibCSharp9DemoTests", "LibCSharp9DemoTests\LibCSharp9DemoTests.csproj", "{3670D125-88DC-448A-A07D-C6F2665B79AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B77B11D2-E177-4BB5-AE12-5AA7ABC20F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B77B11D2-E177-4BB5-AE12-5AA7ABC20F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B77B11D2-E177-4BB5-AE12-5AA7ABC20F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3670D125-88DC-448A-A07D-C6F2665B79AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3670D125-88DC-448A-A07D-C6F2665B79AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3670D125-88DC-448A-A07D-C6F2665B79AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3670D125-88DC-448A-A07D-C6F2665B79AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
