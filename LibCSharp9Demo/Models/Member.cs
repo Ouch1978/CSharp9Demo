@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LibCSharp9Demo
+﻿namespace LibCSharp9Demo.Models
 {
     public record Member
     {

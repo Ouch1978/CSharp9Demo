@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Sources;
+using LibCSharp9Demo.Models;
 
 namespace LibCSharp9Demo
 {
@@ -36,25 +37,4 @@ namespace LibCSharp9Demo
                 null => throw new ArgumentNullException( nameof( vehicle ) )
             };
     }
-
-    public class Taxi
-    {
-        public bool IsNightTime { get; set; }
-    }
-
-    public class Uber : Taxi
-    {
-    }
-
-    public class Mrt
-    {
-        public bool IsTransfer { get; set; }
-    }
-
-    public class Bus
-    {
-        public bool IsTransfer { get; set; }
-        public int Segments { get; set; }
-    }
-
 }

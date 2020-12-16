@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LibCSharp9Demo
+﻿namespace LibCSharp9Demo.Models
 {
-    public class Alphard : ICar
+    public class Bus : IVehicle
     {
+        public bool IsTransfer { get; set; }
+        public int Segments { get; set; }
         public string Brand { get; init; }
         public string TypeName { get; init; }
         public int Year { get; init; }
