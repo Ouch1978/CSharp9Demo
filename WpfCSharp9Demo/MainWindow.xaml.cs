@@ -23,6 +23,8 @@ namespace WpfCSharp9Demo
         public MainWindow()
         {
             InitializeComponent();
+
+            btnMyButton.Click += ( _ , _ ) => { MessageBox.Show( "My Button Clicked" ); };
         }
     }
 }
