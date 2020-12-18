@@ -1,17 +1,23 @@
-﻿namespace ConsoleCSharp9Demo
+﻿using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+
+namespace ConsoleCSharp9Demo
 {
     class Program
     {
-        static void Main( string[] args )
-        {
-            static void PrintText( string text )
-            {
-                System.Console.WriteLine( text );
-            }
+        public static string Name;
 
-#if DEBUG
-            PrintText("之前大概會這樣寫");
-#endif
-        }
+        static void Main( string[] args )
+        { System.Console.WriteLine( $"{Name} rocks!!!" ); }
+
+        [ModuleInitializer]
+        public static async void Init()
+        { Name = await GetName( "Ouch" ); }
+
+        [ModuleInitializer]
+        public static async void Init2()
+        { Name = await GetName( "Niqolas" ); }
+
+        public static Task<string> GetName( string name ) => Task.FromResult( name );
     }
 }
